@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sudoku</string>
+
+    <string name="to_index">目次へ</string>
+    <string name="to_top">TOPへ</string>
+    <string name="index">目次</string>
+
+    <string name="easy">初級</string>
+    <string name="normal">中級</string>
+    <string name="hard">上級</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
