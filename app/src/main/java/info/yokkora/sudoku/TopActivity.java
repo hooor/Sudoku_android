@@ -2,6 +2,7 @@ package info.yokkora.sudoku;
 
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBar;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,6 +15,13 @@ public class TopActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        /*
+        action barをhide
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+        */
+
         setContentView(R.layout.activity_top);
         Button btnNext = (Button) this.findViewById(R.id.to_index);
         btnNext.setOnClickListener(new View.OnClickListener() {
