@@ -28,5 +28,13 @@ public class IndexActivity extends ActionBarActivity{
                 startActivity(intent);
             }
         });
+        android.widget.Button btnToNormal = (android.widget.Button)findViewById(R.id.to_normal);
+        btnToNormal.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                android.content.Intent intent = new android.content.Intent(IndexActivity.this, NormalActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

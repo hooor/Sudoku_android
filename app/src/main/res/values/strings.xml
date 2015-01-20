@@ -11,6 +11,8 @@
     <string name="normal">中級</string>
     <string name="hard">上級</string>
 
+    <string name="time">time</string>
+
     <string name="action_settings">Settings</string>
 
 </resources>

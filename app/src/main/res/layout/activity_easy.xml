@@ -16,17 +16,74 @@
         android:text="@string/easy"
         android:textSize="20dp" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/easy"
+        android:layout_marginTop="4dp"
+        android:gravity="center_horizontal" >
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:format="@string/time" />
+    </LinearLayout>
+
     <GridLayout
         android:id="@+id/gridLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/easy"
+        android:layout_below="@+id/linearLayout1"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="2dp"
-        android:columnCount="9"
-        android:rowCount="9" >
+        android:columnCount="3"
+        android:rowCount="2" >
+        <TextView
+            android:id="@+id/num1"
+            android:text="@string/easy"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/num2"
+            android:text="@string/easy"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/num3"
+            android:text="@string/easy"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/num4"
+            android:text="@string/easy"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/num5"
+            android:text="@string/easy"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/num6"
+            android:text="@string/easy"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:clickable="true"
+            android:textSize="20dp" />
     </GridLayout>
+
     <GridLayout
         android:id="@+id/gridLayout2"
         android:layout_width="wrap_content"
