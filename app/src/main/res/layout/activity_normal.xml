@@ -16,4 +16,138 @@
         android:text="@string/normal"
         android:textSize="20dp" />
 
+    <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/easy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:columnCount="4"
+        android:rowCount="4" >
+        <ImageButton
+            android:id="@+id/num_button1"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button2"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button3"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button4"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button5"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button6"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button7"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button8"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button9"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button10"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button11"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button12"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button13"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button14"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button15"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+        <ImageButton
+            android:id="@+id/num_button16"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+    </GridLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gridLayout1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="6dp"
+        android:gravity="center_horizontal" >
+        <ImageButton
+            android:id="@+id/a_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/num1" />
+        <ImageButton
+            android:id="@+id/b_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/num2" />
+        <ImageButton
+            android:id="@+id/c_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/num3" />
+        <ImageButton
+            android:id="@+id/d_button"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/num4" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:columnCount="1"
+        android:rowCount="1" >
+        <Button
+            android:id="@+id/to_index"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/gridLayout1"
+            android:text="@string/to_index"
+            />
+        <ImageView
+            android:id="@+id/selected"
+            android:layout_below="@id/gridLayout1"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+    </GridLayout>
+
 </RelativeLayout>

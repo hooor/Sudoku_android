@@ -5,11 +5,13 @@
 
     <string name="to_index">目次へ</string>
     <string name="to_top">TOPへ</string>
+    <string name="to_test">Testへ</string>
 
     <string name="index">目次</string>
     <string name="easy">初級</string>
     <string name="normal">中級</string>
     <string name="hard">上級</string>
+    <string name="test">test</string>
 
     <string name="time">time</string>
 
