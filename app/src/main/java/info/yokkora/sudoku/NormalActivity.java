@@ -10,6 +10,9 @@ public class NormalActivity extends android.app.Activity{
     @Override
     protected void onCreate(android.os.Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(new SampleView(this));
+
+        /*
         setContentView(R.layout.activity_normal);
 
         android.widget.ImageButton btn1 = (android.widget.ImageButton)findViewById(R.id.num_button1);
@@ -17,6 +20,7 @@ public class NormalActivity extends android.app.Activity{
 
         // intent
         setIntent();
+        */
     }
 
     public void setIntent() {
@@ -28,5 +32,43 @@ public class NormalActivity extends android.app.Activity{
                 startActivity(intent);
             }
         });
+    }
+
+    private class SampleView extends android.view.View {
+        private android.graphics.Paint mPaint;
+        private float imageX;
+        private float imageY;
+        private android.graphics.Bitmap mBitmap;
+
+        public SampleView(android.content.Context context) {
+            super(context);
+            mPaint = new android.graphics.Paint();
+        }
+
+        @Override
+        protected void onDraw(android.graphics.Canvas canvas) {
+            mBitmap = android.graphics.BitmapFactory.decodeResource(getResources(), R.drawable.num1);
+            canvas.drawBitmap(mBitmap, imageX - mBitmap.getWidth() / 2,
+                    imageY - mBitmap.getHeight() / 2, mPaint);
+        }
+
+        @Override
+        public boolean onTouchEvent(android.view.MotionEvent event) {
+            if (event.getAction() == android.view.MotionEvent.ACTION_DOWN) {
+                imageX = event.getX();
+                imageY = event.getY();
+            }
+            else if (event.getAction() == android.view.MotionEvent.ACTION_MOVE) {
+                imageX = event.getX();
+                imageY = event.getY();
+            }
+            else if (event.getAction() == android.view.MotionEvent.ACTION_UP) {
+                imageX = event.getX();
+                imageY = event.getY();
+            }
+
+            invalidate();
+            return true;
+        }
     }
 }
